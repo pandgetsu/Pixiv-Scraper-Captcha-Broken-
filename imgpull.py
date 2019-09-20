@@ -22,6 +22,10 @@ import re
 from pixiv_scraper import scrape
 import shutil
 
+"""
+    :param url: the url of the image page
+    :param path: path to download to
+"""
 #main url
 def pixiv_page_scrape(url, path):
     #print("this is it")
@@ -60,6 +64,6 @@ def pixiv_page_scrape(url, path):
 
 
 if __name__ == "__main__":
-    url = input("Please input the url: ")
-    path = 'E:/Documents/3D/Gallery/'
+    url = input("Please input the url: ") #url for illust page of artist
+    path = ''   #Path to download to including tmp if including
     pixiv_page_scrape(url, path)
